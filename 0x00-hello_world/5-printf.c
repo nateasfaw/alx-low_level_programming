@@ -1,16 +1,15 @@
-comment or description
-#include <stdio.h> /
-* main - prints some text
- *
- *  *
- *
- *   * Return: always 0(success)
- *
- *    
-	 */
+#include <stdio.h>
 
-another description
 
+
+/**
+ *
+ * * main - prints the size of various types
+ *
+ * * Return: 0 if exited properly, non-zero otherwise
+ *
+ * */
+description
 int main(void)
 
 {
