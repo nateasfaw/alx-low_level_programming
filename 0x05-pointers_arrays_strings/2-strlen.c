@@ -6,7 +6,6 @@
 * @s: string pointer to passed to this function
 * Return: returns length of the string
 */
-
 int _strlen(char *s)
 
 {
