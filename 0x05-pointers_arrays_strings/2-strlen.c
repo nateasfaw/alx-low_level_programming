@@ -7,7 +7,6 @@
 * Return: returns length of the string
 */
 int _strlen(char *s)
-
 {
 int len;
 for (; *s != '\0'; s++)
