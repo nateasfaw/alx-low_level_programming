@@ -15,7 +15,7 @@ while (accept[a])
 b = 0;
 while (s[b] != 32)
 {
-	if (accept[a] == s[b])
+if (accept[a] == s[b])
 {
 t++;
 }
