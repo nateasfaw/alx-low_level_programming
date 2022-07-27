@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "main.h"
 #include <stdlib.h>
 
 /**
@@ -10,30 +10,30 @@
 
 char *argstostr(int ac, char **av)
 {
-int agc, byte, size = ac, index;
-char *agv;
+int arg, byte, size = ac, index;
+char *str;
 if (ac == 0 || av == NULL)
 {
 return (NULL);
 }
-for (agc = 0; agc < ac; agc++)
+for (arg = 0; arg < ac; arg++)
 {
-for (byte = 0; av[agc][byte]; byte++)
+for (byte = 0; av[arg][byte]; byte++)
 size++;
 }
-agv = malloc(sizeof(char) * size + 1);
-if (agv == NULL)
+str = malloc(sizeof(char) * size + 1);
+if (str == NULL)
 {
 return (NULL);
 }
 index = 0;
-for (agc = 0; agc < ac; agc++)
-for (byte = 0; av[agc][byte]; byte++
+for (arg = 0; arg < ac; agc++)
+for (byte = 0; av[arg][byte]; byte++)
 {
-agv[index++] = av[agc][byte];
+str[index++] = av[arg][byte];
 }
-agv[index++] = '\n';
+str[index++] = '\n';
 }
-agv[size] = '\0';
-return (agv);
+str[size] = '\0';
+return (str);
 }
