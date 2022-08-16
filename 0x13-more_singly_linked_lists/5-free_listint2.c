@@ -1,4 +1,4 @@
-#include "main.h"
+#include "lists.h"
 /**
 *free_listint2 - frees listint and sets head to NULL
 *@head: head

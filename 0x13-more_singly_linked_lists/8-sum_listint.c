@@ -1,4 +1,4 @@
-#include "main.h"
+#include "lists.h"
 /**
 *sum_listint - adds all of the dat (n) in the linked list
 *@head: pointer to head pointer of linked list

@@ -1,4 +1,4 @@
-#include "main.h"
+#include "lists.h"
 /**
 *listint_len - counts the elements of litint
 *@h: linked list
