@@ -1,7 +1,4 @@
 #include "lists.h"
-#include <stdlib.h>
-#include <string.h>
-#include <stdio.h>
 /**
 *insert_nodeint_at_index - insert a new node at a given position
 *@head: pointer to the first node
@@ -9,14 +6,16 @@
 *@n: The data to be added
 *Return: the address of the new node or NULL if it failed
 */
-listint_t *insert_nodeint_at_index(listint_t**head, unsigned int idx, int n)
+
+listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
+
 {
 unsigned int count = 0;
 listint_t *temp, *new_node;
 /* check for empty pointer*/
 if (head == NULL)
 return (NULL);
-/*malloc and set values for new node*/
+/* malloc and set values for new node*/
 new_node = malloc(sizeof(listint_t));
 if (new_node == NULL)
 return (NULL);
@@ -29,7 +28,7 @@ new_node->next = *head;
 return (new_node);
 }
 /* go through the list to and add the node*/
-emp = *head;
+temp = *head;
 while (temp != NULL && count < (idx - 1))
 {
 temp = temp->next;
