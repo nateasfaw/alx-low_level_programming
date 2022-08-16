@@ -1,4 +1,4 @@
-#include "main.h"
+#include "lists.h"
 /**
 *add_nodeint - add a node at the beginning of litint_t
 *@head: pointer to the head of the linked list
